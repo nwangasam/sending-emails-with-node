@@ -54,7 +54,7 @@ exports.signup = (req, res, next) => {
     .catch((err) => console.error(err));
 };
 
-exports.getBills = (req, res, next) => {
+exports.getBill = (req, res, next) => {
   const { name, userEmail } = req.body;
 
   let response = {
