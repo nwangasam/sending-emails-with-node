@@ -38,7 +38,7 @@ exports.signup = (req, res, next) => {
   let mail = MailGenerator.generate(response);
 
   let message = {
-    from: MAIL,
+    from: EMAIL,
     to: userEmail,
     subject: 'Sign up successful',
     html: mail,
